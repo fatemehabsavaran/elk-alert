@@ -1,0 +1,38 @@
+telegram:
+  debug: false
+  alert_ttl: 1h
+
+slack:
+  alert_ttl: 1h
+
+elastic:
+  addresses:
+    - ""
+  api_key: ""
+
+sms:
+  sender: ""
+  alert_ttl: 2h
+
+email:
+  host: ""
+  username: ""
+  password: ""
+  port: 
+  sender: ""
+  alert_ttl: 2h
+
+alert_handler:
+  interval: 1m
+  markDuration: 120m
+  alerts:
+    - elasticIndex: 
+      redisDB: 
+      slackWebhook: ""
+
+redis:
+  addr: ""
+  password: ""
+  Timeout: 10
+  PoolSize: 30
+  ClientName: ""
